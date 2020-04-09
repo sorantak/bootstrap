@@ -3,103 +3,91 @@ layout: examples
 title: Product example
 extra_css: "product.css"
 --- -->
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link href="./product.css" rel="stylesheet">
-
   <title>Product</title>
 </head>
 
 <body>
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-  <!-- navigation -->
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Discountak</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Discounboot</a> <button
+        class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link">Product<span class="sr-only"></span></a>
-          </li>
+          <li class="nav-item">Product</li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
-          <button class="btn btn-outline-success my-2 mr-sm-2" type="submit">Sign In</button>
-          <!-- <button class="btn btn-outline-success my-2 mr-sm-2" type="submit">Sign Up</button> -->
-          <!-- <button class="btn btn-outline-success my-2 mr-sm-2" type="submit">My Basket</button> -->
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Sign In</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Sign Up</button>
+          <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">My Basket</button>
         </form>
       </div>
     </nav>
   </header>
 
-  <div class="wrap container">
-    <div class="row mb-2">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">상품 이름</h3>
-          <strong class="d-inline-block mb-2 text-primary">원가</strong>
-          <div class="mb-1 text-muted">할인가</div>
-          <p class="card-text mb-auto">상품 설명</p>
+  <main role="main">
+
+
+    <div class="container">
+      <div class="row mb-2">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+
+            <h3 class="mb-0">상품 이름</h3>
+            <strong class="d-inline-block mb-2 text-primary">원가</strong>
+            <div class="mb-1 text-muted">할인가</div>
+            <p class="card-text mb-auto">상품 설명</p>
             <a class="btn btn-outline-secondary" href="#">장바구니 넣기/ 보기</a>
           </div>
-        <div class="col-auto d-none d-lg-block">썸네일
-          {% include icons/placeholder.svg width="200" height="250" background="#55595c" color="#eceeef" text="Thumbnail" %}
+          <div class="col-auto d-none d-lg-block">썸네일
+            {% include icons/placeholder.svg width="200" height="250" background="#55595c" color="#eceeef" text="Thumbnail" %}
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <p class="lead">상품 상세</p>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <p class="lead">상품 상세</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-  </div>
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <p class="lead">상품 상세</p>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <p class="lead">상품 상세</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-  </div>
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <p class="lead">상품 상세</p>
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <p class="lead">상품 상세</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-  </div>
-
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p class="mb-1">&copy; 2020 Codepresso</p>
-    </footer>
+  </main>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p class="mb-1">&copy; 2020 Codepresso</p>
+  </footer>
 </body>
 
 </html>

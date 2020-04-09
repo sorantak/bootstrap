@@ -1,7 +1,9 @@
 .container {
   max-width: 960px;
 }
-
+header{
+  padding-bottom: 3rem;
+}
 /* .wrap {
   max-width: 960px;
 } */
